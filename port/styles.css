@@ -1,0 +1,1187 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('imh/bagggg.png');
+    background-size: 2500px;
+
+}
+
+header {
+    height: 55px; /* Increase the height of the header */
+    border-bottom: 2px solid #9e9e9e; /* Add a border to the bottom of the header */
+    position: fixed;
+    left: -15px; /* Align the header to the left */
+    right: -15px; /* Align the header to the right */
+    background-color: rgb(243, 165, 255); /* Set background color to light purple */
+    z-index: 1000; /* Ensure the header is above other content */
+    top: 15px; /* Adjust the top position */
+    margin-left: 10px;
+    display: flex;
+}
+
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+nav ul li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 40px;
+    margin-left: 10px; /* Add spacing between list items */
+    margin-top:15px;
+    text-align: center; /* Center text horizontally */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Link text color */
+    font-size: 16px; /* Link text size */
+    font-weight: bold; /* Link text bold */
+    padding: 10px 15px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    align-items: center;
+    margin-top: 150px;
+}
+
+nav ul li a:hover {
+    background-color: #ff68ff; /* Background color on hover */
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    header {
+        height: 80px; /* Reduced height for smaller screens */
+        padding: 0 10px; /* Reduced padding */
+    }
+
+    nav ul {
+        flex-direction: row; /* Keep the same row structure */
+        justify-content: space-around; /* Evenly space the menu items */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Reduced spacing for smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 10px; /* Smaller font for smaller screens */
+        padding: 5px 10px; /* Smaller padding */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 80px; /* Further reduced height */
+    }
+
+    nav ul {
+        justify-content: space-between; /* Space evenly on smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 5px; /* Even smaller margin */
+    }
+
+    nav ul li a {
+        font-size: 10px; /* Smaller font for smaller screens */
+        padding: 4px 8px; /* Further reduced padding */
+    }
+}
+/* Base styles for larger screens */
+.side-image {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.side-image img {
+    display: block;
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.cover-image {
+    height: 80vh; /* Large cover image for bigger screens */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Base styles for larger screens */
+.cover-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-container {
+    position: absolute;
+    top: 40%; /* Adjusted position */
+    left: 600px; /* Adjusted as needed */
+    transform: translateY(-50%);
+    color: #000; /* Text color set to black */
+    z-index: 1;
+}
+
+.text-container h1 {
+    font-size: 70px; /* Large font size for bigger screens */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.right-image {
+    position: absolute;
+    top: 40%;
+    left: 85px; /* Position of the image */
+    transform: translateY(-50%);
+    width: 400px; /* Adjust as needed */
+    height: auto; 
+    border-radius: 50%; /* Circular shape */
+}
+
+.buttons {
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px; /* Spacing between buttons */
+    border: none;
+    background-color: #007bff; /* Button color */
+    color: #fff; 
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 20px; 
+}
+
+.buttons button:hover {
+    background-color: #0056b3; /* Color on hover */
+}
+/* Responsive styles for smaller screens (like tablets and mobiles) */
+@media (max-width: 768px) {
+    .text-container {
+        left: 40%; 
+        bottom: 50%; /* Adjusted for visibility */
+        font-size: 15px; /* Reasonable font size for smaller screens */
+        transform: translate(-50%, -50%); /* Center the text */
+        width: 90%; /* Ensure the text container uses available width */
+    }
+
+    .right-image {
+        left: 50%; 
+        top: 30%; /* Adjusted to center the image */
+        width: 60%; /* Adjusted for smaller screens */
+        transform: translate(-50%, -50%);
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; 
+        margin-top: 15px; /* Spacing */
+    }
+
+    .buttons button {
+        padding: 8px 16px; /* Reasonable padding */
+        font-size: 14px; /* Adjusted font size */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container {
+        left: 50%; 
+        bottom: 55%; /* Adjusted for visibility on smaller screens */
+        font-size: 12px; /* Reasonable font size */
+        transform: translate(-50%, -50%); 
+    }
+
+    .right-image {
+        left: 50%; 
+        bottom: 55%; /* Adjusted for visibility */
+        width: 50%; /* Further reduced width */
+        transform: translate(-50%, -50%);
+    }
+
+    .buttons {
+        align-items: center; 
+        flex-direction: column; 
+    }
+
+    .buttons button {
+        padding: 6px 12px; 
+        font-size: 12px; /* Smaller font size */
+        margin-bottom: 10px; 
+    }
+}
+
+/* Base styles for larger screens */
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.about-content {
+    width: 45%; 
+    text-align: center; 
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-content hr {
+    width: 50px; 
+    margin: 20px auto; 
+}
+
+.intro {
+    margin-bottom: 20px; 
+    margin-left: 10px; 
+}
+
+.partition {
+    border-left: 2px solid #ccc; 
+    height: 100%;
+}
+
+.image-and-links img {
+    width: 400px; 
+    height: auto; 
+    border-radius: 50%; 
+    margin-bottom: 20px; 
+    margin-left: 10px;
+}
+
+.links {
+    margin-top: -20px; 
+}
+
+.links img {
+    width: 50px; 
+    height: auto; 
+    margin: 0 50px; 
+}
+
+/* Responsive styles for smaller screens (like tablets and mobiles) */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+    }
+
+    .about-content {
+        width: 80%; /* Expand to full width for smaller screens */
+    }
+
+    .image-and-links img {
+        width: 300px; /* Reduce image size */
+    }
+
+    .links {
+        margin-top: 10px; /* Adjust spacing */
+    }
+
+    .links img {
+        width: 40px; /* Smaller link icons for smaller screens */
+        margin: 0 20px; /* Reduced spacing between link images */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .image-and-links img {
+        /* width: 200px; Further reduce image size for small screens */
+        margin: 0; /* Center the image */
+    }
+
+    .partition {
+        display: none; /* Hide partition on very small screens */
+    }
+
+    .links {
+        flex-direction: column; /* Stack links vertically for smaller screens */
+        text-align: center; /* Center the links */
+    }
+
+    .links img {
+        margin: 10px 0; /* Add space between stacked link images */
+    }
+}
+/* Base styles for larger screens */
+#education {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.education-item {
+    margin-bottom: 20px;
+}
+
+.college-logo img {
+    width: 100px;
+    height: auto;
+}
+
+hr {
+    width: 50%;
+    height: 1px;
+    margin: 20px auto;
+    background-color: #ccc;
+}
+
+.skills-section {
+    text-align: center;
+}
+
+.skills-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.skills-description {
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.skill {
+    flex: 0 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+.percentage {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    font-weight: bold;
+}
+
+/* Skill specific styles */
+.html {
+    width: 90%;
+    background-color: #e34c26;
+}
+
+.css {
+    width: 80%;
+    background-color: #2965f1;
+}
+
+.javascript {
+    width: 75%;
+    background-color: #f0db4f;
+}
+
+.python {
+    width: 85%;
+    background-color: #3572A5;
+}
+
+.java {
+    width: 85%;
+    background-color: #007396;
+}
+
+.c {
+    width: 80%;
+    background-color: #A8B9CC;
+}
+
+.ui {
+    width: 90%;
+    background-color: #4CAF50;
+}
+
+.linux {
+    width: 75%;
+    background-color: #FCC624;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .education-item {
+        width: 80%; /* Adjust width for smaller screens */
+        margin: 0 auto; /* Center the item */
+    }
+
+    .skills-container {
+        flex-direction: row; /* Keep direction as row but wrap items */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        justify-content: space-around; /* Space items evenly */
+        align-items: center; /* Align items at the center */
+    }
+
+    .skill {
+        flex: 0 1 45%; /* Each skill takes up 45% of container width */
+        margin-bottom: 20px; /* Space between rows */
+    }
+
+    .skill-bar {
+        width: 80%; /* Skill bars use full width of skill container */
+    }
+
+    .percentage {
+        left: 100%; /* Position percentage to the end of the bar */
+        position: absolute; /* Absolute position relative to skill */
+        margin-left:5px; /* Space between the bar and percentage */
+    }
+}
+
+
+/* Base styles for larger screens */
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(230, 106, 255);
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.tab-btn.active {
+    background-color: #e194ff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.container {
+    margin: auto;
+    width: 80%; /* Adjust width as needed */
+}
+
+.experience {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 500px; /* Align to the right */
+}
+.course-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.course-item img {
+    width: 150px; /* Adjust image size as needed */
+    margin-right: 100px; /* Adjust spacing between image and text */
+    margin-left: 100px;
+}
+
+.course-details {
+    flex: 1;
+}
+
+.course-details h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.course-details p {
+    margin: 0;
+    color: #666;
+}
+.tab-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment as needed */
+}
+
+
+.internship-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.internship-item {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 50px); /* Two items per row */
+}
+
+.internship-item img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+/* Responsive styles for smaller screens (like tablets and mobiles) */
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column; /* Stack tabs vertically */
+        align-items: center; /* Center tabs */
+    }
+
+    .tab-btn {
+        padding: 8px 15px; /* Reduce padding */
+        font-size: 16px; /* Smaller font */
+        margin: 5px 0; /* Spacing */
+    }
+
+    .experience {
+        font-size: 20px; /* Reduce font size */
+        margin-left: 0; /* Center alignment */
+        text-align: center; 
+    }
+
+    .course-item {
+        width: 100%; /* Full width */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+        margin-bottom: 20px; /* Spacing between course items */
+    }
+
+    .course-item img {
+        width: 100px; /* Adjust image size */
+        margin: 0; /* Center the image */
+    }
+
+    .internship-row {
+        flex-direction: column; /* Stack internships vertically */
+    }
+
+    .internship-item {
+        width: 100%; /* Full width */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center the content */
+    }
+}
+
+@media (max-width: 480px) {
+    .tabs {
+        flex-direction: column; /* Stack tabs vertically */
+        text-align: center; /* Center tabs */
+    }
+
+    .tab-btn {
+        padding: 6px 10px; /* Further reduce padding */
+        font-size: 14px; /* Smaller font */
+        border-bottom: 1px solid transparent; 
+    }
+
+    .tab-btn.active {
+        border-bottom: 1px solid #e194ff; 
+    }
+
+    .course-item {
+        width: 100%; 
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 15px; /* Additional spacing for smaller screens */
+    }
+
+    .course-item img {
+        width: 80px; /* Further reduce image size */
+        margin: 0; 
+    }
+
+    .internship-item {
+        width: 100%; 
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+/* Base styles for larger screens */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.project-box {
+    position: relative;
+    width: 300px; /* Fixed width for project boxes */
+    height: auto;
+    margin-right: 20px; 
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 3px solid #e229ff; 
+    border-radius: 10px; 
+    text-align: center;
+}
+
+.project-box img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.project-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.1); 
+}
+
+.project-box:hover .overlay {
+    opacity: 1;
+}
+
+.project-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0); 
+}
+
+.projects-heading {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center; /* Center heading for large screens */
+}
+
+/* Responsive styles for smaller screens (like tablets and mobiles) */
+@media (max-width: 768px) {
+    .projects {
+        justify-content: center; 
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column; /* Stack projects vertically for smaller screens */
+    }
+
+    .project-box {
+        width: 80%; /* Adjust width for smaller screens */
+        margin-right: 0; 
+    }
+
+    .project-title {
+        font-size: 16px; /* Smaller font for smaller screens */
+    }
+
+    .projects-heading {
+        font-size: 20px; /* Smaller font for smaller screens */
+        text-align: center; /* Center the heading */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        flex-direction: column; 
+        justify-content: center;
+        text-align: center; 
+    }
+
+    .project-box {
+        width: 100%; 
+        margin-bottom: 15px; /* Reduced margin for smaller screens */
+    }
+
+    .project-title {
+        font-size: 14px; /* Smaller font for smaller screens */
+    }
+
+    .projects-heading {
+        font-size: 18px; /* Further reduce font size */
+        text-align: center;
+        margin-bottom: 10px; /* Adjust spacing */
+    }
+}
+/* Base styles for larger screens */
+.team {
+    text-align: center; /* Center the boxes horizontally */
+}
+
+.team-member {
+    margin: 30px; /* Adjust margin as needed */
+    width: 220px; /* Set a fixed width for each box */
+    display: inline-block; /* Display boxes inline */
+    text-align: center;
+    margin-left:100px;
+}
+
+.member-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.member-box img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.member-box:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.member-links {
+    margin-top: 10px;
+}
+
+.member-links a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.member-links a:hover {
+    color: #666;
+}
+
+.member-box h3 {
+    margin-top: 10px; /* Add spacing between image/links and name */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Adjust text color */
+}
+
+/* Responsive styles for smaller screens (like tablets and mobiles) */
+@media (max-width: 768px) {
+    .team {
+        text-align: center; 
+    }
+
+    .team-member {
+        width: 100%; /* Full width for smaller screens */
+        margin: 15px; /* Reduce margin for smaller screens */
+    }
+
+    .member-box {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .member-box img {
+        width: 80%; /* Reduce image width for smaller screens */
+    }
+
+    .member-links {
+        text-align: center; 
+        flex-direction: column; /* Stack links vertically */
+    }
+
+    .member-box h3 {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team {
+        flex-direction: column; /* Stack team members vertically */
+        text-align: center; 
+    }
+
+    .team-member {
+        width: 100%; 
+        margin: 10px; /* Further reduce margin */
+    }
+
+    .member-box {
+        border: 1px solid #ccc;
+        padding: 10px; 
+        text-align: center;
+    }
+
+    .member-box img {
+        width: 70%; /* Further reduce image width */
+    }
+
+    .member-box h3 {
+        font-size: 12px; /* Further reduce font size */
+    }
+
+    .member-links {
+        flex-direction: column; 
+        text-align: center; 
+        margin-top: 5px; /* Reduce margin-top */
+    }
+}
+/* Base styles for larger screens */
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    margin-right: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 50px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.contact-info .name {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info .additional-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info .info-item {
+    margin: 10px;
+}
+
+.contact-info .info-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.contact-info .links {
+    margin-bottom: 20px;
+}
+
+.contact-info .links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-info .links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.contact-info .links a:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive styles for smaller screens (like tablets and mobiles) */
+@media (max-width: 768px) {
+    .contact-us {
+        flex-direction: column; /* Stack vertically for smaller screens */
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .contact-form {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-left: 0; /* Reset margin */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .contact-info {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .social-links a {
+        font-size: 20px; /* Smaller icon size for smaller screens */
+        margin: 0 5px; /* Adjust spacing */
+    }
+
+    .contact-info .name {
+        font-size: 20px; /* Smaller font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-us {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 30px 0; /* Adjust padding for smaller screens */
+    }
+
+    .contact-form {
+        width: 100%; 
+        padding: 15px; /* Further reduce padding */
+    }
+
+    .contact-info {
+        text-align: center; 
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .contact-info .additional-info {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .social-links a {
+        font-size: 18px; /* Smaller icons for smaller screens */
+        margin: 0 3px; /* Reduce spacing */
+    }
+}
+/* Base styles for larger screens */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.member-links a img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px; /* Space between logos */
+}
+
+.member-links a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.member-box {
+    text-align: center;
+    padding: 20px; 
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+.achievements-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.achievement img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.achievement-content h4 {
+    margin-bottom: 10px;
+}
+
+.achievement-content p {
+    font-size: 14px;
+    color: #555;
+}
+.achievement {
+    display: flex; /* Display achievement items in a row */
+    margin-bottom: 20px; /* Add some margin between each achievement */
+}
+
+.achievement img {
+    width:400px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 40px; /* Add some space between image and content */
+    transition: transform 0.3s ease;
+}
+.achievement img:hover {
+    transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+.achievement-content {
+    flex: 2; /* Allow content to take remaining space */
+}
+
+/* Responsive styles for smaller screens (like tablets and mobiles) */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0; /* Adjust padding for smaller screens */
+    }
+
+    .member-links a img {
+        width: 30px; /* Smaller icons for smaller screens */
+        margin-right: 5px; /* Reduced spacing between icons */
+    }
+
+    .member-box {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .achievements-section {
+        flex-direction: column; /* Stack achievements vertically */
+        justify-content: center; /* Center alignment */
+        align-items: center; /* Align items in the center */
+    }
+
+    .achievement {
+        flex-direction: column; /* Stack content vertically for smaller screens */
+        width: 100%; /* Full width */
+    }
+
+    .achievement img {
+        width: 200px; /* Adjusted image width */
+        margin-right: 0; /* No margin needed */
+        margin-left: 0; /* No margin needed */
+    }
+
+    .achievement-content {
+        text-align: center; /* Center text */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px 0; /* Further reduce padding */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .member-links a {
+        text-align: center; /* Align links in the center */
+    }
+
+    .achievement {
+        flex-direction: column; 
+        justify-content: center; 
+        width: 100%; 
+    }
+
+    .achievement img {
+        width: 150px; /* Further reduce image size for smaller screens */
+    }
+
+    .achievement-content h4 {
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .achievement-content p {
+        font-size: 12px; /* Adjust font size */
+    }
+}

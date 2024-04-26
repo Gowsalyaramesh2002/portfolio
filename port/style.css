@@ -1,0 +1,778 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('imh/bagggg.png');
+    background-size: 2500px;
+}
+header {
+    height: 55px; /* Increase the height of the header */
+    border-bottom: 2px solid #9e9e9e; /* Add a border to the bottom of the header */
+    position: fixed;
+    left: -15px; /* Align the header to the left */
+    right: -15px; /* Align the header to the right */
+    background-color: rgb(243, 165, 255); /* Set background color to light purple */
+    z-index: 1000; /* Ensure the header is above other content */
+    top: 15px; /* Adjust the top position */
+    margin-left: 10px;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+nav ul li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 40px;
+    margin-left: 10px; /* Add spacing between list items */
+    margin-top:15px;
+    text-align: center; /* Center text horizontally */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Link text color */
+    font-size: 16px; /* Link text size */
+    font-weight: bold; /* Link text bold */
+    padding: 10px 15px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    align-items: center;
+    margin-top: 150px;
+}
+
+nav ul li a:hover {
+    background-color: #ff68ff; /* Background color on hover */
+}
+
+
+.side-image {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+.side-image img {
+    display: block;
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+.cover-image {
+    /* background-image: url('your_cover_image_url_here'); */
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+.cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* .logo {
+    display: inline-block;
+    padding: 10px 20px;
+}
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu-icon {
+    display: none;
+    /* Add styling for menu icon if needed */
+/* }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+} */ */
+
+/* header{
+    height: 80px ;
+} */
+.cover-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-container {
+    position: absolute;
+    top:40%;
+    left: 600px; /* Adjust as needed */
+    transform: translateY(-50%);
+    color: #000; /* Text color set to black */
+    z-index: 1; /* Ensure the text is above the image */
+}
+
+.text-container h1 {
+    font-size: 70px; /* Increased font size to 32px */
+    margin-bottom: 10px; /* Adjusted spacing between name and job title */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+.right-image {
+    position: absolute;
+    top: 40%;
+    left: 85px;
+    transform: translateY(-50%);
+    width: 400px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.buttons {
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px; /* Adjust spacing between buttons as needed */
+    border: none;
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect for background color */
+    border-radius: 20px; /* Makes the button slightly curved */
+}
+
+.buttons button:hover {
+    background-color: #0056b3; /* Button color on hover */
+}
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center content vertically */
+    margin-bottom: 50px; /* Add margin between sections */
+}
+
+.about-content {
+    width: 45%; /* Adjust width of the about content */
+    text-align: center; /* Center text horizontally */
+}
+
+.about-content h2 {
+    margin-bottom: 20px; /* Adjust spacing */
+}
+
+.about-content hr {
+    width: 50px; /* Adjust width of the horizontal line */
+    margin: 20px auto; /* Center the horizontal line */
+}
+
+.intro {
+    margin-bottom: 20px; 
+    margin-left: 10px;/* Adjust spacing */
+}
+
+.partition {
+    border-left: 2px solid #ccc; /* Create partition line */
+    height: 100%;
+}
+
+.image-and-links img {
+    width: 400px; /* Adjust the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-left: 10px;
+}
+
+.links {
+    margin-top:-20px; /* Adjust spacing */
+}
+
+.links img {
+    width: 50px; /* Adjust the width of the link images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 50px; /* Adjust spacing between link images */
+}
+
+#education {
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: 50px; /* Adjust margin as needed */
+}
+
+.education-item {
+    margin-bottom: 20px; /* Adjust margin between items as needed */
+}
+
+.college-logo img {
+    width: 100px; /* Adjust width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+hr {
+    width: 50%; /* Adjust width of the horizontal line */
+    height: 1px; /* Adjust height of the horizontal line */
+    margin: 20px auto; /* Center the horizontal line */
+    background-color: #ccc; /* Adjust color of the horizontal line */
+}
+.skills-section {
+    text-align: center;
+  }
+  
+  .skills-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .skills-description {
+    margin-bottom: 20px;
+   
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  
+  .skill {
+    flex: 0 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .logo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+  }
+  
+  .percentage {
+    position: absolute;
+    bottom: 0;
+    right:-50px;
+    font-weight: bold;
+  }
+  
+  /* HTML Skill */
+  .html {
+    width: 90%;
+    background-color: #e34c26;
+  }
+  
+  /* CSS Skill */
+  .css {
+    width: 80%;
+    background-color: #2965f1;
+  }
+  
+  /* JavaScript Skill */
+  .javascript {
+    width: 75%;
+    background-color: #f0db4f;
+  }
+  
+  /* Python Skill */
+  .python {
+    width: 85%;
+    background-color: #3572A5;
+  }
+  
+/* Java Skill */
+.java {
+    width: 85%;
+    background-color: #007396; /* Adjust color as needed */
+  }
+  
+  /* C Skill */
+  .c {
+    width: 80%;
+    background-color: #A8B9CC; /* Adjust color as needed */
+  }
+  
+  /* UI Design Skill */
+  .ui {
+    width: 90%;
+    background-color: #4CAF50; /* Adjust color as needed */
+  }
+  
+  /* Linux Skill */
+  .linux {
+    width: 75%;
+    background-color: #FCC624; /* Adjust color as needed */
+  }
+
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color:rgb(230, 106, 255);
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.tab-btn.active {
+    background-color: #e194ff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.container {
+    margin: auto;
+    width: 80%; /* Adjust width as needed */
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add some space below the tabs */
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 0 10px;
+    font-size: 18px;
+    border-bottom: 2px solid transparent; /* Initially no border */
+    transition: border-bottom 0.3s ease-in-out; /* Add transition effect */
+}
+
+.tab-btn.active {
+    border-bottom: 2px solid #e194ff; /* Border color for active tab */
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+.experience{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 500px;
+}
+.course-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.course-item img {
+    width: 150px; /* Adjust image size as needed */
+    margin-right: 100px; /* Adjust spacing between image and text */
+    margin-left: 100px;
+}
+
+.course-details {
+    flex: 1;
+}
+
+.course-details h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.course-details p {
+    margin: 0;
+    color: #666;
+}
+.tab-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment as needed */
+}
+
+.course-item {
+    width: calc(50% - 10px); /* Adjust width to fit two items per row */
+    margin-bottom: 20px;
+}
+.internship-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.internship-item img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+.internship-details h4 {
+    margin-bottom: 5px;
+}
+
+.internship-details p {
+    margin-bottom: 5px;
+}
+.internship-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.internship-item {
+    width: calc(50% - 50px); /* Two items in each row with some spacing */
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center projects horizontally */
+    text-align: center; /* Center project content horizontally */
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center projects horizontally */
+    margin-top: 20px; /* Adjust top margin as needed */
+}
+
+.project-box {
+    position: relative;
+    width: 300px;
+    height: auto; /* Adjust height as needed */
+    margin-right: 20px; /* Margin between each project-box */
+    margin-bottom: 20px; /* Margin between rows */
+    overflow: hidden;
+    border: 3px solid #e229ff; /* Border style */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center the text horizontally */
+}
+
+.project-box img {
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-box:hover .overlay {
+    opacity: 1;
+}
+
+.project-title {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0); /* Text color */
+}
+.projects-heading{
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 650px;
+    /* text-align: center; */
+}
+.team {
+    text-align: center; /* Center the boxes horizontally */
+}
+
+.team-member {
+    margin: 30px; /* Adjust margin as needed */
+    width: 220px; /* Set a fixed width for each box */
+    display: inline-block; /* Display boxes inline */
+    text-align: center;
+    margin-left:100px;
+}
+
+.member-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.member-box img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.member-box:hover img {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+.member-links {
+    margin-top: 10px;
+}
+
+.member-links a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.member-links a:hover {
+    color: #666;
+}
+
+.member-box h3 {
+    margin-top: 10px; /* Add spacing between image/links and name */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Adjust text color */
+}
+
+
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    margin-right: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    margin-left: 50px;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+.name{
+    margin-bottom: 150px;
+}
+.contact-info {
+    text-align: center;
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.contact-info .name {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info .additional-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-info .info-item {
+    margin: 10px;
+}
+
+.contact-info .info-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.contact-info .links {
+    margin-bottom: 20px;
+}
+
+.contact-info .links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-info .links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.contact-info .links a:hover img {
+    transform: scale(1.1);
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+.member-links a img {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logos */
+}
+
+.member-links a {
+    display: inline-block; /* Allows margin adjustment and centers images vertically */
+    vertical-align: middle; /* Align images vertically */
+}
+
+.member-box {
+    text-align: center; /* Center the content inside each member box */
+    padding: 20px; /* Add some padding around the content */
+}
+
+.team-member {
+    margin-bottom: 20px; /* Add some space below each team member */
+}
+.achievements-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+
+.achievement img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.achievement-content h4 {
+    margin-bottom: 10px;
+}
+
+.achievement-content p {
+    font-size: 14px;
+    color: #555;
+}
+.achievement {
+    display: flex; /* Display achievement items in a row */
+    margin-bottom: 20px; /* Add some margin between each achievement */
+}
+
+.achievement img {
+    width:400px; /* Set the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 40px; /* Add some space between image and content */
+    transition: transform 0.3s ease;
+}
+.achievement img:hover {
+    transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+.achievement-content {
+    flex: 2; /* Allow content to take remaining space */
+}
+@media (max-width: 768px) {
+    .achievement {
+        flex-direction: column; /* Display achievement items in a column on smaller screens */
+    }
+}
